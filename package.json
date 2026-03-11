@@ -1,0 +1,49 @@
+{
+  "name": "@striderlabs/mcp-spotify",
+  "version": "0.1.0",
+  "description": "MCP server for Spotify — let AI agents search music, control playback, and manage playlists",
+  "main": "dist/index.js",
+  "bin": {
+    "striderlabs-mcp-spotify": "dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "mcp",
+    "spotify",
+    "music",
+    "playback",
+    "playlist",
+    "ai-agent",
+    "strider",
+    "model-context-protocol",
+    "spotify-api",
+    "oauth"
+  ],
+  "author": "Strider Labs <hello@striderlabs.ai>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markswendsen-code/mcp-spotify"
+  },
+  "homepage": "https://striderlabs.ai",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "playwright": "^1.41.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  },
+  "mcpName": "io.github.markswendsen-code/spotify"
+}

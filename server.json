@@ -1,0 +1,15 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schema/server.json",
+  "schemaVersion": "2025-12-11",
+  "id": "io.github.markswendsen-code/spotify",
+  "name": "Strider Spotify MCP",
+  "description": "MCP server for Spotify — search music, control playback, and manage playlists via the Spotify Web API",
+  "version": "0.1.0",
+  "transports": [
+    {
+      "type": "stdio",
+      "command": "node",
+      "args": ["dist/index.js"]
+    }
+  ]
+}
